@@ -29,12 +29,12 @@ export default function App() {
         <View style={styles.container}>
             <StatusBar></StatusBar>
             <Text
-                style={styles.header}
+                style={styles.header}>
+                Факторы прогноза отдаленных тирозинкиназ второго поколения при неэффективности или непереносимости
+                двух предшествующих линий терапии
+            </Text>
 
-            >Факторы прогноза отдаленных тирозинкиназ второго поколения при неэффективности или непереносимости
-                двух предшествующих линий терапии</Text>
-
-            <Text>Возраст на момент начала ИТК 3-й линии</Text>
+            <Text style={styles.factor}>Возраст на момент начала ИТК 3-й линии</Text>
             <TextInput
                 style={styles.input}
                 onChangeText={onChangeNumber}
@@ -42,16 +42,17 @@ export default function App() {
                 placeholder="Полных лет"
                 keyboardType="numeric"
             />
-            <Text>Отсутствие ЦГО на ИТК 1-й или 2-й линии</Text>
-            <Switch
+
+            <Text style={styles.factor}>  Отсутствие ЦГО на ИТК 1-й или 2-й линии</Text>
+            <Switch style={styles.switch}
                 trackColor={{false: "#767577", true: "#81b0ff"}}
                 thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
                 ios_backgroundColor="#3e3e3e"
                 onValueChange={noCgo12}
                 value={isEnabled}
             />
-            <Text>Отсутствие ЦГО на момент начала ИТК 3-й линии</Text>
-            <Switch
+            <Text style={styles.factor}>Отсутствие ЦГО на момент начала ИТК 3-й линии</Text>
+            <Switch style={styles.switch}
                 trackColor={{false: "#767577", true: "#81b0ff"}}
                 thumbColor={isEnabled3 ? "#f5dd4b" : "#f4f3f4"}
                 ios_backgroundColor="#3e3e3e"
@@ -71,8 +72,9 @@ export default function App() {
 
 const styles = StyleSheet.create({
     container: {
+
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#EBEDEF',
         padding: 5,
         justifyContent: 'center',
     },
@@ -81,11 +83,23 @@ const styles = StyleSheet.create({
         margin: 12,
         borderWidth: 1,
         padding: 10,
+        borderBottomWidth: 1,
     },
     header: {
         alignItems: 'center',
-        color: 'blue',
+        backgroundColor: '#A9CCE3',
+        borderRadius: 20,
+        padding: 20,
+        color: 'white',
         marginBottom: 20,
-        borderBottomWidth: 1,
+
+    },
+    factor: {
+        paddingTop:10,
+        borderTopWidth:1,
+    },
+    switch:{
+       justifyContent:"flex-start",
     }
+
 });
