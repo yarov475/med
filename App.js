@@ -20,12 +20,14 @@ export default function App() {
         setIsEnabled3(previousState => !previousState);
         setCount(count + 7)
     }
+ let result = count + number/10;
 // TODO onchange=>onsubmit
 // TODO input should change count
 // TODO conditional rendering
 // TODO button submit=>make count=>render result
 // TODO css
     return (
+
         <View style={styles.container}>
             <StatusBar></StatusBar>
             <Text
@@ -59,7 +61,7 @@ export default function App() {
                 onValueChange={noCgo3}
                 value={isEnabled3}
             />
-            <Text>You clicked {count} times age {number / 10}  </Text>
+            <Text> result  {result}  </Text>
             <Button
                 onPress={() => setCount(count + 1)}
                 title="Click me!"
