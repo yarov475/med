@@ -1,8 +1,8 @@
 import {StatusBar} from 'expo-status-bar';
 
 import React, {useState} from 'react';
-import {View, Text, Button, StyleSheet} from 'react-native';
-import {SafeAreaView, TextInput, Switch} from "react-native";
+import {View, Text, Button, StyleSheet,Alert,TextInput, Switch} from 'react-native';
+
 // ****************************************FACTORS**********************
 // Прогностический фактор
 // Балл
@@ -20,6 +20,20 @@ export default function App() {
 
     const [isEnabled, setIsEnabled] = useState(false);
     const [isEnabled3, setIsEnabled3] = useState(false);
+
+    const showResult = () =>{
+Alert.alert('Результат', modal,    [
+      {
+        text: "Cancel",
+        onPress: () => Alert.alert("Cancel Pressed"),
+        style: "cancel",
+      },
+    ]);
+    };
+
+
+
+
 
     const noCgo12 = () => {
         setIsEnabled(previousState => !previousState);
@@ -65,18 +79,23 @@ export default function App() {
     }
 
     let resultMes;
+    let modal;
     if (result == 0) {
         resultMes = <Text style={styles.start}
         >Нажмите считать</Text>
-    } else if (result <= 9) {
+        modal='Выедите данные '
+            } else if (result <= 9) {
         resultMes = <Text style={styles.low}
         >Низкий риск</Text>
+        modal = 'Низкий риск'
     } else if (result > 10 && result <= 15) {
         resultMes = <Text style={styles.middle}
         >промежуточный риск</Text>
+         modal='промежуточный риск'
     } else if (result >= 16) {
         resultMes = <Text style={styles.high}
         > высокий риск</Text>
+        modal='высокий риск'
     }
 
 
@@ -99,17 +118,19 @@ export default function App() {
                 keyboardType="numeric"
             />
 
-            <Text style={styles.factor}> Отсутствие ЦГО на ИТК 1-й или 2-й линии</Text>
-
-            <Switch style={styles.switch}
+            <Text style={styles.factor}> Отсутствие ЦГО на ИТК 1-й или 2-й линии  </Text>
+            <Text><Switch style={styles.switch}
                     trackColor={{false: "#767577", true: "#81b0ff"}}
                    thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
                     ios_backgroundColor="#3e3e3e"
                     onValueChange={isEnabled ?  antinoCgo12: noCgo12}
                     value={isEnabled}
-            />
-            <Text style={styles.factor}>Отсутствие ЦГО на момент начала ИТК 3-й линии</Text>
-            <Switch style={styles.switch}
+            /></Text>
+
+
+            <Text style={styles.factor}>Отсутствие ЦГО на момент начала ИТК 3-й линии
+ </Text>
+        <Text><Switch style={styles.switch}
                     trackColor={{false: "#767577", true: "#81b0ff"}}
                     thumbColor={isEnabled3 ? "#f5dd4b" : "#f4f3f4"}
                     ios_backgroundColor="#3e3e3e"
@@ -117,24 +138,26 @@ export default function App() {
                     value={isEnabled3}
                     onValueChange={isEnabled3 ?  antiNoCgo3: noCgo3}
 
-            />
+            /></Text>
 
 
             <Button
-                onPress={() => setCount(count + 1)}
+                onPress={showResult}
                 title="Считать"
             />
 
 
-            <Text> result {result}   ageFactor: {ageFactor}  </Text>
+            <Text id = 'resultStatementID'> not counted</Text>
 
 
-            {resultMes}
+            {/*{resultMes}*/}
 
 
             <Text> Разработчик приложения: Ярочкин Д.А.</Text>
         </View>
+
     );
+
 }
 
 const styles = StyleSheet.create({
@@ -162,6 +185,7 @@ const styles = StyleSheet.create({
 
     },
     factor: {
+        display:"flex",
         paddingTop: 10,
         borderTopWidth: 1,
     },
