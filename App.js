@@ -24,12 +24,26 @@ export default function App() {
     const noCgo12 = () => {
         setIsEnabled(previousState => !previousState);
         setCount(count + 8)
+         console.warn('noCgo12')
     };
+    const antinoCgo12=()=>{
+         setIsEnabled(previousState => !previousState);
+        setCount(count - 8)
+        console.warn('antinoCgo12')
+    }
 
     const noCgo3 = () => {
         setIsEnabled3(previousState => !previousState);
         setCount(count + 7)
+        console.warn('Cgo12')
     }
+      const antiNoCgo3 = () => {
+        setIsEnabled3(previousState => !previousState);
+        setCount(count - 7)
+        console.warn('antiNoCgo3')
+    }
+
+
     let ageFactor = parseInt(number / 10)
     let result = count + ageFactor;
 
@@ -49,6 +63,7 @@ export default function App() {
     }
     {/***********************************************************************************************************/
     }
+
     let resultMes;
     if (result == 0) {
         resultMes = <Text style={styles.start}
@@ -65,8 +80,6 @@ export default function App() {
     }
 
 
-// TODO onchange=>onsubmit
-//sound analyst out what to do if count == 9.1 e tc
     return (
 
         <View style={styles.container}>
@@ -87,11 +100,12 @@ export default function App() {
             />
 
             <Text style={styles.factor}> Отсутствие ЦГО на ИТК 1-й или 2-й линии</Text>
+
             <Switch style={styles.switch}
                     trackColor={{false: "#767577", true: "#81b0ff"}}
-                    thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
+                   thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
                     ios_backgroundColor="#3e3e3e"
-                    onValueChange={noCgo12}
+                    onValueChange={isEnabled ?  antinoCgo12: noCgo12}
                     value={isEnabled}
             />
             <Text style={styles.factor}>Отсутствие ЦГО на момент начала ИТК 3-й линии</Text>
@@ -101,6 +115,8 @@ export default function App() {
                     ios_backgroundColor="#3e3e3e"
                     onValueChange={noCgo3}
                     value={isEnabled3}
+                    onValueChange={isEnabled3 ?  antiNoCgo3: noCgo3}
+
             />
 
 
@@ -110,10 +126,10 @@ export default function App() {
             />
 
 
-            {/*<Text> result {result}  </Text>*/}
-            ageFactor: {ageFactor}
+            <Text> result {result}   ageFactor: {ageFactor}  </Text>
 
- {resultMes}
+
+            {resultMes}
 
 
             <Text> Разработчик приложения: Ярочкин Д.А.</Text>
@@ -152,34 +168,34 @@ const styles = StyleSheet.create({
     switch: {
         justifyContent: "flex-start",
     },
-    start:{
-        backgroundColor:'#F7DC6F',
-        fontSize:20,
-        margin:0,
-        padding:20,
-        textAlign:'center'
+    start: {
+        backgroundColor: '#F7DC6F',
+        fontSize: 20,
+        margin: 0,
+        padding: 20,
+        textAlign: 'center'
     },
-    low:{
-         backgroundColor:'#F4ECF7',
-        fontSize:20,
-        margin:0,
-        padding:20,
-        textAlign:'center'
+    low: {
+        backgroundColor: '#F4ECF7',
+        fontSize: 20,
+        margin: 0,
+        padding: 20,
+        textAlign: 'center'
     },
-middle:{
-         backgroundColor:'#E8DAEF',
-        fontSize:20,
-        margin:0,
-        padding:20,
-        textAlign:'center'
+    middle: {
+        backgroundColor: '#E8DAEF',
+        fontSize: 20,
+        margin: 0,
+        padding: 20,
+        textAlign: 'center'
 
-},
-    high:{
-         backgroundColor:'#A569BD',
-        fontSize:20,
-        margin:0,
-        padding:20,
-        textAlign:'center'
+    },
+    high: {
+        backgroundColor: '#A569BD',
+        fontSize: 20,
+        margin: 0,
+        padding: 20,
+        textAlign: 'center'
     }
 
 });
