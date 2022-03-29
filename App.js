@@ -1,7 +1,6 @@
 import {StatusBar} from 'expo-status-bar';
-
 import React, {useState} from 'react';
-import {View,Linking, Text, Button, StyleSheet, Alert, TextInput, Switch, BackHandler} from 'react-native';
+import {Alert, BackHandler, Button, Switch, Text, TextInput, View} from 'react-native';
 import {styles} from "./modules/css";
 
 // ****************************************FACTORS**********************
@@ -15,8 +14,7 @@ import {styles} from "./modules/css";
 // 7
 // **************************************************************************
 export default function App() {
-    const supportedURL = 'https://vk.com/dkorshunov';
-        const [count, setCount] = useState(0);
+    const [count, setCount] = useState(0);
     const [number, onChangeNumber] = React.useState(null);
 
     const [isEnabled, setIsEnabled] = useState(false);
@@ -38,8 +36,8 @@ export default function App() {
         ], {
             cancelable: true,
             onDismiss: () => {
-                    result = 0
-                },
+                result = 0
+            },
         });
     };
     const noCgo12 = () => {
@@ -83,9 +81,8 @@ export default function App() {
     {/***********************************************************************************************************/
     }
 
-    let resultMes;
     let modal;
-    if (result == 0) {
+    if (result === 0) {
         modal = 'Введите данные '
     } else if (result <= 9) {
         modal = 'Низкий риск'
@@ -117,8 +114,9 @@ export default function App() {
                           trackColor={{false: "#767577", true: "#81b0ff"}}
                           thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
                           ios_backgroundColor="#3e3e3e"
-                          onValueChange={isEnabled ? antinoCgo12 : noCgo12}
                           value={isEnabled}
+                          onValueChange={isEnabled ? antinoCgo12 : noCgo12}
+
             /></Text>
 
 
@@ -128,7 +126,6 @@ export default function App() {
                           trackColor={{false: "#767577", true: "#81b0ff"}}
                           thumbColor={isEnabled3 ? "#f5dd4b" : "#f4f3f4"}
                           ios_backgroundColor="#3e3e3e"
-                          onValueChange={noCgo3}
                           value={isEnabled3}
                           onValueChange={isEnabled3 ? antiNoCgo3 : noCgo3}
             /></Text>
@@ -136,12 +133,11 @@ export default function App() {
 
             <Button
                 onPress={showResult}
-                title="Узнать результат"
-            />
+                title="Узнать результат"/>
 
             <Text style={styles.signature}>
                 Разработчик Ярочкин Д.А.
-             </Text>
+            </Text>
 
         </View>
 
