@@ -52,12 +52,11 @@ export default function App() {
     const noCgo3 = () => {
         setIsEnabled3(previousState => !previousState);
         setCount(count + 7)
-        console.warn('Cgo12')
-    }
+            }
     const antiNoCgo3 = () => {
         setIsEnabled3(previousState => !previousState);
         setCount(count - 7)
-        console.warn('antiNoCgo3')
+
     }
 
 
