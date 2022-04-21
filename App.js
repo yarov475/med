@@ -85,7 +85,7 @@ export default function App() {
         modal = 'Введите данные '
     } else if (result <= 9) {
         modal = 'Низкий риск'
-    } else if (result > 10 && result <= 15) {
+    } else if (result >= 10 && result <= 15) {
         modal = 'промежуточный риск'
     } else if (result >= 16) {
         modal = 'высокий риск'
