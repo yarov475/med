@@ -8,13 +8,13 @@ import {styles} from "./modules/css";
 // Балл
 // Возраст на момент начала ИТК 3-й линии (для каждых 10 лет)
 // 1
-// Отсутствие ЦГО на ИТК 1-й или 2-й линии
+// Отсутствие ЦО на ИТК 1-й или 2-й линии
 // 8
-// Отсутствие ЦГО на момент начала ИТК 3-й линии
+// Отсутствие ЦО на момент начала ИТК 3-й линии
 // 7
 // **************************************************************************
 export default function App() {
-    const [count, setCount] = useState(0);
+    const [count, setCount] = React.useState(0);
     const [number, onChangeNumber] = React.useState(null);
 
     const [isEnabled, setIsEnabled] = useState(false);
@@ -22,11 +22,11 @@ export default function App() {
     const showResult = () => {
         Alert.alert('Результат: ', modal, [
             {
-                text: "Закрыть",
+                text: "Выйти из приложения",
                 onPress: () => BackHandler.exitApp(),
                 style: "cancel",
             }, {
-                text: "Заново",
+                text: "еще раз",
                 onPress: () => {
                     result = 0
                 },
@@ -40,27 +40,28 @@ export default function App() {
             },
         });
     };
-    const noCgo12 = () => {
+    const noCo12 = () => {
         setIsEnabled(previousState => !previousState);
         setCount(count + 8);
     };
-    const antinoCgo12 = () => {
+    const antinoCo12 = () => {
         setIsEnabled(previousState => !previousState);
         setCount(count - 8);
     }
 
-    const noCgo3 = () => {
+    const noCo3 = () => {
         setIsEnabled3(previousState => !previousState);
         setCount(count + 7)
-            }
-    const antiNoCgo3 = () => {
+    }
+    const antiNoCo3 = () => {
         setIsEnabled3(previousState => !previousState);
         setCount(count - 7)
 
     }
 
 
-    let ageFactor = parseInt(number / 10)
+    let ageFactor = Number(number) / 10
+
     let result = count + ageFactor;
 
     {/*            ******************************************RESULT******************************************/
@@ -71,7 +72,7 @@ export default function App() {
     }
     {/*баллов ≥16, n=24). У пациентов в группе высокого риска отмечалась значимо более низкая частота достижения*/
     }
-    {/*ПЦГО на ИТК 3-й линии по сравнению с группой промежуточного риска (1/24 (4%) по сравнению с 7/27*/
+    {/*ПЦО на ИТК 3-й линии по сравнению с группой промежуточного риска (1/24 (4%) по сравнению с 7/27*/
     }
     {/*(26%), p=0,033), в свою очередь группа промежуточного риска имела значимо худшие результаты по*/
     }
@@ -81,14 +82,14 @@ export default function App() {
     }
 
     let modal;
-    if (result === 0) {
-        modal = 'Введите данные '
+    if (result === 0 || number === null) {
+        modal = 'Введите данные. Если полных лет меньше 1, введите в графе "Возраст на момент начала ИТК 3-й линии" цифру "0" '
     } else if (result <= 9) {
-        modal = 'Низкий риск'
+        modal = 'низкий риск недостижения ПЦО на ИТК 3-й линии терапии'
     } else if (result >= 10 && result <= 15) {
-        modal = 'промежуточный риск'
+        modal = 'промежуточный риск недостижения ПЦО на ИТК 3-й линии терапии'
     } else if (result >= 16) {
-        modal = 'высокий риск'
+        modal = 'высокий риск недостижения ПЦО на ИТК 3-й линии терапии'
     }
     return (
         <View style={styles.container}>
@@ -108,25 +109,25 @@ export default function App() {
                 keyboardType="numeric"
             />
 
-            <Text style={styles.factor}> Отсутствие ЦГО на ИТК 1-й или 2-й линии </Text>
+            <Text style={styles.factor}> Отсутствие ЦО на ИТК 1-й или 2-й линии </Text>
             <Text><Switch style={styles.switch}
                           trackColor={{false: "#767577", true: "#81b0ff"}}
                           thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
                           ios_backgroundColor="#3e3e3e"
                           value={isEnabled}
-                          onValueChange={isEnabled ? antinoCgo12 : noCgo12}
+                          onValueChange={isEnabled ? antinoCo12 : noCo12}
 
             /></Text>
 
 
-            <Text style={styles.factor}>Отсутствие ЦГО на момент начала ИТК 3-й линии
+            <Text style={styles.factor}>Отсутствие ЦО на момент начала ИТК 3-й линии
             </Text>
             <Text><Switch style={styles.switch}
                           trackColor={{false: "#767577", true: "#81b0ff"}}
                           thumbColor={isEnabled3 ? "#f5dd4b" : "#f4f3f4"}
                           ios_backgroundColor="#3e3e3e"
                           value={isEnabled3}
-                          onValueChange={isEnabled3 ? antiNoCgo3 : noCgo3}
+                          onValueChange={isEnabled3 ? antiNoCo3 : noCo3}
             /></Text>
 
 
