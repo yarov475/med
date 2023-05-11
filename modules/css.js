@@ -18,12 +18,15 @@ export const styles = StyleSheet.create({
     header: {
         alignItems: 'center',
         backgroundColor: '#A9CCE3',
+        paddingTop:10,
         borderRadius: 20,
         padding: 20,
         color: 'white',
-        marginBottom: 20,
+        marginBottom: 10,
+        marginTop:50,
 
     },
+  
     factor: {
         display: "flex",
         paddingTop: 10,
@@ -64,6 +67,8 @@ export const styles = StyleSheet.create({
     signature:{
         color:'#5E5E5D',
         fontSize:10,
-    }
+       
+    },
+   
 
 });
