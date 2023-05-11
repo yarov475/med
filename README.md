@@ -36,38 +36,38 @@ Enter the required information, and then click the 'Submit' button to see the re
 # Application UI:
 
 
-
+App icon on smartphone screen
 ![App icon on smartphone screen](asset/1.jpg)
 
 
 
-
+Interface in English
 ![Interface in English](asset/3.jpg)
 
 
-
+interface in Russian
 ![interface in Russian](asset/6.jpg)
 
 
-
+Error in English
 ![Error in English](asset/4.jpg)
 
 
-
+Error in Russian
 ![Error in Russian](asset/8.jpg)
 
   
-
+Low risk in English
 ![Low risk in English](asset/9.jpg)
 
 
-
+Low Risk
 ![Low Risk](asset/10.jpg)
 
 
-
+High risk
 ![High risk](asset/12.jpg)
-
+High Risk
 
 ![High Risk](asset/11.jpg)
 
@@ -102,7 +102,7 @@ Enter the required information, and then click the 'Submit' button to see the re
 
 # Чтобы запустить приложение локально, выполните следующие действия:
 
-- Клонируйте этот репозиторий: git clone git@github.com:yarov475/med.git 
+- Клонируйте  этот репозиторий: git clone git@github.com:yarov475/med.git 
 - Установить зависимости: установка npm
 - Запустите сервер разработки: запуск выставки
 # Для запуска приложения на Android
@@ -120,37 +120,38 @@ Enter the required information, and then click the 'Submit' button to see the re
 
 # Вид приложения:
 
-
+Иконка приложения
 
 ![Иконка приложения на экране смартфона](asset/1.jpg)
 
-
+Интерфейс на английском
 
 ![Интерфейс на английском](asset/3.jpg)
 
 
-
+интерфейс на русском
 ![интерфейс на русском](asset/6.jpg)
 
-
+Ошибка на аглийском
 ![Ошибка на аглийском](asset/4.jpg)
 
 
-
+Ошибка на русском 
 ![Ошибка на русском](asset/8.jpg)
 
 
-
+Низкий риск 
 ![Низкий риск на английском](asset/9.jpg)
 
  
-
+Низкий риск
 ![Низкий риск на русском](asset/10.jpg)
 
  
-
+Высокий риск
 ![Высокий риск на английском](asset/12.jpg)
 
+Высокий риск 
 
 
 ![Высокий риск на русском](asset/11.jpg)
