@@ -18,7 +18,7 @@ Getting started
 
 # To run the app locally, follow these steps:
 
-- Clone this repository: git clone https://github.com/dmitry-yarochkin/non-achieving-ccyr-app.git
+- Clone this repository: git clone git@github.com:yarov475/med.git 
 - Install dependencies: npm install
 - Start the development server: expo start
 # To run app on Android
@@ -65,7 +65,9 @@ High risk in Russian
 
 `This app was developed by Dmitry A. Yarochkin` 
 
-# ПРОЧТИ МЕНЯ
+
+*************************************************
+
 
 Это приложение React Native,   Эта программа производит подсчет баллов согласно методике:
 
