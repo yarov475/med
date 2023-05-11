@@ -56,7 +56,7 @@ Error in Russian
 
 ![Error in Russian](asset/8.jpg)
 
-Low risk in English
+   Low risk in English
 
 ![Low risk in English](asset/9.jpg)
 
@@ -142,15 +142,16 @@ High risk in Russian
 
 ![Ошибка на русском](asset/8.jpg)
 
-Низкий риск на английском
+
+    Низкий риск на английском
 
 ![Низкий риск на английском](asset/9.jpg)
 
-Низкий риск на русском
+   Низкий риск на русском
 
 ![Низкий риск на русском](asset/10.jpg)
 
-Высокий риск на английском
+  Высокий риск на английском
 
 ![Высокий риск на английском](asset/12.jpg)
 
