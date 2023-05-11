@@ -36,31 +36,40 @@ Enter the required information, and then click the 'Submit' button to see the re
 # Application UI:
 
 App icon on smartphone screen
+
 ![App icon on smartphone screen](asset/1.jpg)
 
 
 Interface in English
+
 ![Interface in English](asset/3.jpg)
 
-interface in Russian
+Interface in Russian
+
 ![interface in Russian](asset/6.jpg)
 
-error in english
+Error in English
+
 ![Error in English](asset/4.jpg)
 
 Error in Russian
+
 ![Error in Russian](asset/8.jpg)
 
 Low risk in English
+
 ![Low risk in English](asset/9.jpg)
 
 Low risk in Russian
+
 ![Low Risk](asset/10.jpg)
 
-high risk in english
+High risk in english
+
 ![High risk in English](asset/12.jpg)
 
 High risk in Russian
+
 ![High Risk](asset/11.jpg)
 
 `This app was developed by Dmitry A. Yarochkin` 
@@ -113,31 +122,40 @@ High risk in Russian
 # Вид приложения:
 
 Иконка приложения на экране смартфона
+
 ![Иконка приложения на экране смартфона](asset/1.jpg)
 
 
 Интерфейс на английском
+
 ![Интерфейс на английском](asset/3.jpg)
 
 интерфейс на русском
+
 ![интерфейс на русском](asset/6.jpg)
 
 Ошибка на аглийском
+
 ![Ошибка на аглийском](asset/4.jpg)
 
 Ошибка на русском
+
 ![Ошибка на русском](asset/8.jpg)
 
 Низкий риск на английском
+
 ![Низкий риск на английском](asset/9.jpg)
 
 Низкий риск на русском
+
 ![Низкий риск на русском](asset/10.jpg)
 
 Высокий риск на английском
+
 ![Высокий риск на английском](asset/12.jpg)
 
 Высокий риск на русском
+
 ![Высокий риск на русском](asset/11.jpg)
 
 
