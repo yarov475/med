@@ -2,6 +2,7 @@
   "expo": {
     "name": "MedCalculater",
     "slug": "MedCalculater",
+    "description": "The assessment of probability of not achieving CCyR according to total score.",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -23,10 +24,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.dmitryandreevich.MedCalculater"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f79f0c43-7c61-41e8-98d0-62d7cf847e80"
+      }
     }
   }
 }

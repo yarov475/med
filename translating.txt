@@ -1,0 +1,14 @@
+Scoring system of non-achieving CCyR on second-generation TKIs in third line therapy CP
+CML
+Prognostic factor
+Score
+Age at start of 3rd line TKI (per 10 years)
+1
+Absence of CyR on 1st line or 2nd line TKI
+8
+Absence of CyR prior to 3rd line TKI
+7
+The assessment of probability of not achieving CCyR according to total score.
+After calculation the total score for each patient we divided the patients into two groups: the low
+risk (total score ≤10, the high risk (total score ≥11) The patients of the high-risk group had
+significantly lower rate of achieving CCyR on third line TKI compared low-risk ,
