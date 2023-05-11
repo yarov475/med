@@ -18,7 +18,7 @@ Getting started
 
 # To run the app locally, follow these steps:
 
-- Clone this repository: git clone https://github.com/dmitry-yarochkin/non-achieving-ccyr-app.git
+- Clone this repository: git clone git@github.com:yarov475/med.git 
 - Install dependencies: npm install
 - Start the development server: expo start
 # To run app on Android
@@ -35,35 +35,47 @@ After launching the app, you will see a form that asks for the patient's age at 
 Enter the required information, and then click the 'Submit' button to see the result, which indicates the group of risk. The app also includes options to reset the form and change the language (English or Russian).
 # Application UI:
 
-App icon on smartphone screen
+
+
 ![App icon on smartphone screen](asset/1.jpg)
 
 
-Interface in English
+
+
 ![Interface in English](asset/3.jpg)
 
-interface in Russian
+
+
 ![interface in Russian](asset/6.jpg)
 
-error in english
+
+
 ![Error in English](asset/4.jpg)
 
-Error in Russian
+
+
 ![Error in Russian](asset/8.jpg)
 
-Low risk in English
+  
+
 ![Low risk in English](asset/9.jpg)
-Low risk in Russian
+
+
+
 ![Low Risk](asset/10.jpg)
 
-high risk in english
-![High risk in English](asset/12.jpg)
-High risk in Russian
+
+
+![High risk](asset/12.jpg)
+
+
 ![High Risk](asset/11.jpg)
 
 `This app was developed by Dmitry A. Yarochkin` 
 
-# ПРОЧТИ МЕНЯ
+
+*************************************************
+
 
 Это приложение React Native,   Эта программа производит подсчет баллов согласно методике:
 
@@ -72,7 +84,7 @@ High risk in Russian
 
 
 
-# Методика:
+
 
 | Прогностический фактор                   |  Балл|
 |---------------------------------------------------------|-------------------------------------|
@@ -90,7 +102,7 @@ High risk in Russian
 
 # Чтобы запустить приложение локально, выполните следующие действия:
 
-- Клонируйте этот репозиторий: git clone https://github.com/dmitry-yarochkin/non-achieving-ccyr-app.git
+- Клонируйте этот репозиторий: git clone git@github.com:yarov475/med.git 
 - Установить зависимости: установка npm
 - Запустите сервер разработки: запуск выставки
 # Для запуска приложения на Android
@@ -108,30 +120,39 @@ High risk in Russian
 
 # Вид приложения:
 
-Иконка приложения на экране смартфона
+
+
 ![Иконка приложения на экране смартфона](asset/1.jpg)
 
 
-Интерфейс на английском
+
 ![Интерфейс на английском](asset/3.jpg)
 
-интерфейс на русском
+
+
 ![интерфейс на русском](asset/6.jpg)
 
-Ошибка на аглийском
+
 ![Ошибка на аглийском](asset/4.jpg)
 
-Ошибка на русском
+
+
 ![Ошибка на русском](asset/8.jpg)
 
-Низкий риск на английском
+
+
 ![Низкий риск на английском](asset/9.jpg)
-Низкий риск на русском
+
+ 
+
 ![Низкий риск на русском](asset/10.jpg)
 
-Высокий риск на английском
+ 
+
 ![Высокий риск на английском](asset/12.jpg)
-Высокий риск на русском
+
+
+
 ![Высокий риск на русском](asset/11.jpg)
 
 
