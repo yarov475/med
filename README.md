@@ -33,43 +33,6 @@ Usage
 After launching the app, you will see a form that asks for the patient's age at the start of third-line TKI therapy and two Switch components that ask whether the patient did not achieve CCyR on first or second-line TKI therapy and whether the patient did not achieve CCyR prior to third-line TKI therapy.
 
 Enter the required information, and then click the 'Submit' button to see the result, which indicates the group of risk. The app also includes options to reset the form and change the language (English or Russian).
-# Application UI:
-
-
-App icon on smartphone screen
-![App icon on smartphone screen](asset/1.jpg)
-
-
-
-Interface in English
-![Interface in English](asset/3.jpg)
-
-
-interface in Russian
-![interface in Russian](asset/6.jpg)
-
-
-Error in English
-![Error in English](asset/4.jpg)
-
-
-Error in Russian
-![Error in Russian](asset/8.jpg)
-
-  
-Low risk in English
-![Low risk in English](asset/9.jpg)
-
-
-Low Risk
-![Low Risk](asset/10.jpg)
-
-
-High risk
-![High risk](asset/12.jpg)
-High Risk
-
-![High Risk](asset/11.jpg)
 
 `This app was developed by Dmitry A. Yarochkin` 
 
@@ -99,7 +62,6 @@ High Risk
     ПЦО на ИТК 3-й линии по сравнению с группой промежуточного риска (1/24 (4%) по сравнению с 7/27
     (26%), p=0,033), в свою очередь группа промежуточного риска имела значимо худшие результаты по   }
     сравнению с группой низкого риска (7/27 (26%) по сравнению с 14/22 (64%), p=0,008)"
-
 # Чтобы запустить приложение локально, выполните следующие действия:
 
 - Клонируйте  этот репозиторий: git clone git@github.com:yarov475/med.git 
@@ -118,43 +80,22 @@ High Risk
 
 Введите необходимую информацию, а затем нажмите кнопку «Отправить», чтобы увидеть результат, в котором указана группа риска. Приложение также включает в себя опции для сброса формы и изменения языка (английский или русский).
 
-# Вид приложения:
-
-Иконка приложения
-
 ![Иконка приложения на экране смартфона](asset/1.jpg)
-
-Интерфейс на английском
 
 ![Интерфейс на английском](asset/3.jpg)
 
-
-интерфейс на русском
 ![интерфейс на русском](asset/6.jpg)
 
-Ошибка на аглийском
 ![Ошибка на аглийском](asset/4.jpg)
 
-
-Ошибка на русском 
 ![Ошибка на русском](asset/8.jpg)
 
-
-Низкий риск 
 ![Низкий риск](asset/9.jpg)
 
- 
-Низкий риск
 ![Низкий риск на русском](asset/10.jpg)
 
- 
-Высокий риск
 ![Высокий риск на английском](asset/12.jpg)
 
-Высокий риск 
 ![Высокий риск на русском](asset/11.jpg)
-
-
-
  
 `Это приложение было разработано Дмитрием А. Ярочкиным`
